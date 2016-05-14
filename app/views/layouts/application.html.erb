@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MusicMinded</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body style="padding-top: 70px;">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<a class="btn btn-default navbar-btn pull-right" style="margin-left: 5px;" href="/contact" role="button">
+				Contact
+			</a>
+			<a class="btn btn-default navbar-btn pull-right" href="/" role="button">
+				Home
+			</a>
+		</div>
+	</nav>
+
+<%= yield %>
+
+</body>
+</html>
