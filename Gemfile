@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'mail_form'
+gem 'simple_form'
+
 gem 'bootstrap-sass'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

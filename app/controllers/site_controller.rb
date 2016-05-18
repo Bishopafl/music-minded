@@ -4,4 +4,8 @@ class SiteController < ApplicationController
 		render "index"
 	end
 
+	def sound
+		render "sound"
+	end
+
 end
