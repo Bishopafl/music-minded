@@ -5,8 +5,8 @@ class ContactsController < ApplicationController
   		end
 
   		def create
-    		@contact = Contact.new message_params
-    		@contact.request = request
+    		@contact = Contact.new
+    		# @contact.request = request
 	    	if @contact.deliver
 	      	flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
 	    	else
@@ -18,6 +18,6 @@ class ContactsController < ApplicationController
   		private
 
   		def message_params
-  			params.require permit(:name, :email, :message)
+  			params.require(:contact).permit(:name, :email, :message)
   		end
 end

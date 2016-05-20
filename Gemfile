@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'mail_form'
 gem 'simple_form'
 
